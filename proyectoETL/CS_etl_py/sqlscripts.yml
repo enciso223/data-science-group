@@ -1,3 +1,20 @@
+dim_sede :
+  create table dim_sede
+  (
+  key_dim_sede SERIAL not null
+  constraint dim_sede_pk
+  primary key,
+  sede_id         int,
+  nombre_sede     text,
+  direccion       text,
+  telefono        text,
+  nombre_contacto text,
+  ciudad          text,
+  departamento    text,
+  cliente_id      int,
+  saved           date
+  );
+
 dim_fecha :
   create table dim_fecha
   (
